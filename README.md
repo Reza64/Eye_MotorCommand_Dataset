@@ -37,6 +37,11 @@ Other variables:
 ## Reading the dataset
 
 To read the dataser you can use 'datasetloader.m' file in the current repository [Link](https://github.com/Reza64/Eye_MotorCommand_Dataset/blob/main/datasetloader.m)
+Some of the output plots will be as following:
+<p float="left">
+[a]<img src="https://user-images.githubusercontent.com/4155147/184123487-6a493258-c294-4e90-be5c-1f68eeeebb9b.png" width="350" height="350">
+[b]<img src="https://user-images.githubusercontent.com/4155147/184123168-eda26d31-99e0-4b0b-b3e4-6617581efc05.png" width="350" height="250">
+</p>
 
 ## Attribution
 
