@@ -1,5 +1,5 @@
 # EyeMotorCommand
-This dataset contains motor command of a simulated eye model with 6 motors.
+This dataset contains motor command of a simulated eye model with 6 motors that's mentioned in the paper [link](). This work is a part of the ERC advanced grant project Orient [link]()
 
 ## Download
 
