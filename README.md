@@ -36,12 +36,44 @@ Other variables:
 
 ## Reading the dataset
 
-To read the dataser you can use 'datasetloader.m' file in the current repository [Link](https://github.com/Reza64/Eye_MotorCommand_Dataset/blob/main/datasetloader.m)
-Some of the output plots will be as following:
+To read the dataser you can use 'datasetloader.m' file in the current repository [Link](https://github.com/Reza64/Eye_MotorCommand_Dataset/blob/main/datasetloader.m). 
+Some of the output plots are shown in the following. It is obvious from the plots that in the dataset the range of the eye movement in torsional (x) direction is approximately (-15,+15), in horizontal axix y (vertical eye movement) is app. (-25,+25), and in vertical axis x (horizontal eye movement) is app. (-60,+60). 
+
 <p float="left">
-[a]<img src="https://user-images.githubusercontent.com/4155147/184123487-6a493258-c294-4e90-be5c-1f68eeeebb9b.png" width="350" height="350">
-[b]<img src="https://user-images.githubusercontent.com/4155147/184123168-eda26d31-99e0-4b0b-b3e4-6617581efc05.png" width="350" height="250">
+[a]<img src="https://user-images.githubusercontent.com/4155147/184123487-6a493258-c294-4e90-be5c-1f68eeeebb9b.png" width="350" height="300">
+[b]<img src="https://user-images.githubusercontent.com/4155147/184123755-09719da0-d6b9-4e77-8925-250430f8496d.png" width="350" height="300">
 </p>
+
+The code for generating the above plots is as below:
+
+```
+% XY plane ------------------------------
+figindx=10;
+figure (figindx+1);
+title('XY Plane','fontsize',16);
+xlabel('r_x (deg)','fontsize',16);
+ylabel('r_y (deg)','fontsize',16);
+hold on
+line(fullstated(1,1:end),fullstated(2,1:end),'LineWidth', 1.2,'Color',[1 0 0]);
+scatter(fullstated(1,:),fullstated(2,:),0.5,'filled','MarkerEdgeColor',[1 0 0]);
+xlim([-1*30 30])
+ylim([-1*maxsacclen maxsacclen])
+grid on
+grid minor
+
+% YZ plane ------------------------------
+figure (figindx+3);
+title('YZ Plane','fontsize',16);
+xlabel('r_z (deg)','fontsize',16);
+ylabel('r_y (deg)','fontsize',16);
+hold on
+line(fullstated(3,1:end-1),fullstated(2,1:end-1),'LineWidth', 1.2,'Color',[1 0 0]);
+xlim([-2*maxsacclen 2*maxsacclen])
+ylim([-1*maxsacclen maxsacclen])
+grid on
+grid minor
+```
+
 
 ## Attribution
 
