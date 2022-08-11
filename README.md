@@ -3,7 +3,7 @@ This dataset contains motor command of a simulated eye model with 6 motors that'
 
 ## Download
 
-The datase is provided in a single **.mat file** with size 1.07 GB. The file is uploaded in Kaggle, please find it in this [link] (https://www.kaggle.com/datasets/rezajavanmard/eye-motorcommand-dataset) 
+The datase is provided in a single **.mat file** with size 1.07 GB. The file is uploaded in Kaggle, please find it in this [link](https://www.kaggle.com/datasets/rezajavanmard/eye-motorcommand-dataset) 
 
 
 ## Eye model
@@ -36,7 +36,7 @@ Other variables:
 
 ## Reading the dataset
 
-To read the dataser you can use 'datasetloader.m' file in the current repository [Link] (https://github.com/Reza64/Eye_MotorCommand_Dataset/blob/main/datasetloader.m)
+To read the dataser you can use 'datasetloader.m' file in the current repository [Link](https://github.com/Reza64/Eye_MotorCommand_Dataset/blob/main/datasetloader.m)
 
 ## Attribution
 
